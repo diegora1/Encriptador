@@ -1,0 +1,286 @@
+*{
+  font-family: 'Lobster', cursive;
+}
+
+.material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+}
+
+body{
+  background: #eee2b4;
+  display: block;
+  margin: 4px;
+}
+
+.div-titulo{
+  background: #137fd9;
+  font-family: 'Lobster', cursive;
+}
+h1{
+  font-family: 'Lobster', cursive;
+  animation: color1 5s infinite;
+}
+@keyframes color1{
+  0% {color: blue;}
+  10% {color: blueviolet;}
+  20% {color: red;}
+  30% {color: green;}
+  40% {color: yellow;}
+  50% {color: black;}
+  60% {color: purple;}
+  70% {color: cyan;}
+  80% {color: coral;}
+  90% {color: orangered;}
+  100% {color: orange;}
+}
+
+.logo-titulo{
+  height: 48px;
+  width: 130px;
+}
+
+.logo-titulo:hover{
+  transform: rotatey(80deg);
+  transition: 0.3s;
+}
+
+h1 {
+  display: block;
+  font-size: 2.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+  font-weight: bold;
+  margin-top: auto;
+  text-align: center;
+  color: black;
+}
+
+.contenedor-principal{
+  background: #5ccda7;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Lobster', cursive;
+}
+
+.tarjeta1{
+  width: 500px;
+  height: 200px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Lobster', cursive;
+  transition: all 1s;
+}
+
+.tarjeta1:hover{
+  background: rgb(255, 255, 255, 0.1);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.error{
+  color: #420c09;
+  display: inline-block;
+  font-size: 0.7rem;
+  margin: 0 0.3rem;
+  font-family: 'Lobster', cursive;
+}
+
+button{
+  position: relative;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 15px 0;
+  color: #5ccda7;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 50px;
+}
+
+button:hover{
+  background: #5ccda7;
+  color: black;
+  box-shadow: 0 0 5px #5ccda7, 0 0 25 #03e964, 0 0 50px #5ccda7, 0 0 200px #5ccda7;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+button:nth-child(1){
+  filter: hue-rotate(270deg);
+}
+
+button:nth-child(2){
+  filter: hue-rotate(110deg);
+}
+
+button span{
+  position: absolute;
+  display: block;
+}
+
+button span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #5ccda7);
+  animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1{
+  0%{
+    left: -100%;
+  }
+  50%, 100%{
+    left: 100%;
+  }
+}
+
+button span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #5ccda7);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes animate2{
+  0%{
+    top: -100%;
+  }
+  50%, 100%{
+    top: 100%;
+  }
+}
+
+button span:nth-child(3){
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #5ccda7);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
+}
+
+@keyframes animate3{
+  0%{
+    right: -100%;
+  }
+  50%, 100%{
+    right: 100%;
+  }
+}
+
+button span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #5ccda7);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate4{
+  0%{
+    bottom: -100%;
+  }
+  50%, 100%{
+    bottom: 100%;
+  }
+}
+
+.container1{
+  position: absolute;
+  width: 577px;
+  height: 40px;
+  left: 100px;
+  top: 168px;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 100%;
+  color: #420c09;
+  border-radius: 20px;
+  font-family: 'Lobster', cursive;
+}
+
+.container2{
+  position:sticky;
+  width: 400px;
+  height: 584px;
+  left: 950px;
+  top: 40px;
+  background: white;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0);
+  border-radius: 32px;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  transition: all 1s;
+}
+
+.container2:hover{
+  background: rgb(255, 255, 255, 0.1);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.img-look{
+  margin-top: 50px;
+}
+
+.img-look:hover{
+  transform: rotatey(30deg);
+  transition: 0.3s;
+}
+
+.tarjeta2{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 120%;
+  text-align:center;
+  color: #420c09;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 16px 0px;
+  font-family: 'Lobster', cursive;
+  transition: all 1s;
+}
+
+.contenedor-botones{
+  display: flex;
+}
+
+.mensaje-contenedor{
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  all: initial;
+  font: inherit;
+  background: transparent;
+  color: #420c09;
+  padding: 1em 0.5em;
+}
